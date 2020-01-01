@@ -1,12 +1,16 @@
 import React from 'react';
 import ToDoForm from './TodoForm';
+import Typography from '@material-ui/core/Typography';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>To Do List</h1>
-      <ToDoForm />
+    <div className="App">
+      <Typography component="h1" variant="h2">
+      Todos
+      </Typography>
+
+      <ToDoForm saveTodo={console.warn}/>
     </div>
   );
 }
