@@ -9,12 +9,20 @@ import { useState } from 'react';
 
 
 const TodoForm = ({ saveTodo }) => {
+    // user ES6 destructuring assignment.
+    // useState returns an array, so if we const [], we just assigned value and setValue...
+    // ...to the first and second index, respectively. 
     const [value, setValue] = useState('');
 
     const handleSubmit = (value) => {
         return e => {
             e.preventDefault();
+            
+            // add to-do list item
             saveTodo(value);
+
+            // clear input
+            setValue('');
         };
     };
 
