@@ -26,6 +26,11 @@ function App() {
       // }
   };
 
+  const deleteTodo = (todoIndex) => {
+    const survivingTodos = todos.filter((_, index) => index !== todoIndex );
+    setTodos(survivingTodos);
+  };
+
   return (
     <div className="App">
       <Typography component="h1" variant="h2">
@@ -33,7 +38,7 @@ function App() {
       </Typography>
 
       <ToDoForm saveTodo={saveTodo}/>
-      <TodoList todos={todos} />
+      <TodoList todos={todos} deleteTodo={deleteTodo} />
     </div>
   );
 }
