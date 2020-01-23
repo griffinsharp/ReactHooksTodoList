@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Todo lists are a great way to familiarize yourself with a frontend framework. I've made several in React, a few in React-Redux, and now, one with purely React Hooks. Feel free to clone the repo below and run the commands if you'd like to see the final product. 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 ## Available Scripts
 
